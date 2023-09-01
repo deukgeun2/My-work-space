@@ -2,6 +2,7 @@
 여러 파일 스테이징 - git add 파일명1 파일명2
 상태창 - git status
 커밋 내역 조회 - git log --all --oneline
+커밋 그래프로 보기 - git log --all --graph
 
 커밋 - git commit -m "커밋 메시지"
 전 버전과 차이점을 보여준다 - git difftool
@@ -9,4 +10,17 @@
 프로젝트 복사본 , 커밋의 복사본 - git branch 브랜치이름
 브랜치 이동 - git switch 브랜치이름
 브랜치 삭제 - git branch -d 브랜치이름
-asdf
+브랜치 합치기 - git merge 브랜치이름
+#서브브랜치에서 개발한 것은 서브브랜치에서만 가능
+#메인 브랜치로 스위치하면 그 파일들은 없어짐
+#브랜치를 만들어서 작업하고, 작업이 완료되면 메인 브랜치로 합치는 방식으로 진행
+#같은 파일 같은 줄을 수정하면 merge로 합칠때 충돌이 발생함
+
+merge 완료된 브랜치 삭제 - git branch -d 브랜치이름
+merge 안한 브랜치 삭제 - git branch -D 브랜치이름
+git rebase 브랜치이름 - 브랜치의 신규시작점을 최신으로 옮길 수 있다.
+#rebase쓰는 이유 : 브랜치 없이도 코드 잘짜는 고수 같음
+#3-way merge는 너무 복잡해진다. 간단하게 하려면 rebase를 쓰는게 좋다.
+#rebase 단점 : conflict엔딩이 많이 남
+
+
