@@ -1,7 +1,0 @@
-모든 파일 스테이징 - git add .
-여러 파일 스테이징 - git add 파일명1 파일명2
-상태창 - git status
-커밋 내역 조회 - git log --all --oneline
-
-커밋 - git commit -m "커밋 메시지"
-전 버전과 차이점을 보여준다 - git difftool
