@@ -22,5 +22,19 @@ git rebase 브랜치이름 - 브랜치의 신규시작점을 최신으로 옮길
 #rebase쓰는 이유 : 브랜치 없이도 코드 잘짜는 고수 같음
 #3-way merge는 너무 복잡해진다. 간단하게 하려면 rebase를 쓰는게 좋다.
 #rebase 단점 : conflict엔딩이 많이 남
+깔끔한 merge - git squash 브랜치이름
+
+git은 버전관리 목적
+파일 복구 가능, 커밋 복구 가능, 과거로 이동가능
+파일 복구 하는법 : git restore 파일명
+특정 commit 시점으로 파일 복구하는법 : git restore --source 커밋해시 파일명
+스테이징된 파일을 unstaged로 변경(파일단위 복구) : git restore --staged 파일명 
+commit 취소 하는 법 : git revert 커밋해시
+commit 여러개취소가능 : git revert 커밋해시1 커밋해시2
+최근 commit 취소가능 : git revert HEAD
+과거로 모든걸 되돌리기 : git reset --hard 커밋해시
+리셋인데 변동사항 지우지말고 스테이징 해놓기 : git reset --soft 커밋해시
+리셋인데 변동사항 지우지말고 unstaged로 해놓기 : git reset --mixed 커밋해시
+
 
 
