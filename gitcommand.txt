@@ -7,6 +7,7 @@
 커밋 - git commit -m "커밋 메시지"
 전 버전과 차이점을 보여준다 - git difftool
 
+브랜치이름 메인으로 바꾸기 : git branch -M 브랜치이름
 프로젝트 복사본 , 커밋의 복사본 - git branch 브랜치이름
 브랜치 이동 - git switch 브랜치이름
 브랜치 삭제 - git branch -d 브랜치이름
@@ -36,5 +37,15 @@ commit 여러개취소가능 : git revert 커밋해시1 커밋해시2
 리셋인데 변동사항 지우지말고 스테이징 해놓기 : git reset --soft 커밋해시
 리셋인데 변동사항 지우지말고 unstaged로 해놓기 : git reset --mixed 커밋해시
 
+git clone 주소 - 깃허브에 있는 프로젝트를 내려받는 명령어
+git pull - 깃허브에 있는 프로젝트를 업데이트 하는 명령어
+git push - 깃허브에 있는 프로젝트를 업로드 하는 명령어
+git remote add origin 주소 - 깃허브에 있는 프로젝트를 연결하는 명령어
+git remote -v - 연결된 깃허브 주소를 확인하는 명령어
+
+
+git stash - 현재 작업중인 내용을 임시저장하는 명령어
+git stash list - 임시저장한 내용을 확인하는 명령어
+git stash pop - 가장 최근에 임시저장한 내용을 불러오는 명령어
 
 
